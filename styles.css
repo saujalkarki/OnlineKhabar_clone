@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color1: #2260bf;
+  --color2: #84a4d5;
+  --color3: #b50404;
+  --color4: rgb(255, 255, 255);
+}
+
+.starter-logo-container {
+  padding: 1em 0 1em 3.8em;
+}
+
+.starter-logo {
+  max-width: 268px;
+}
+
+.nav-bar {
+  background-color: var(--color1);
+}
+
+.nav-bar-list {
+  padding: 0.8em 0 0.8em 0;
+  color: var(--color4);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-bar-list-items {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.nav-bar-list-items:hover {
+  cursor: pointer;
+  color: var(--color2);
+}
+
+.nav-btn {
+  cursor: pointer;
+  color: var(--color3);
+  border: none;
+  border-radius: 5px;
+  padding: 0.6em 1em 0.6em 1em;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.btn-election {
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: var(--color3);
+  color: var(--color4);
+}
+
+.btn-english:hover {
+  background-color: var(--color3);
+  color: var(--color4);
+}
+
+.profile-image {
+  width: 30px;
+  border-radius: 100px;
+}
+
+.container-1 {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.hot-topics {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hot-topics-list {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.hot-topics-list img {
+  width: 30px;
+}
+
+.hot-topics-list span {
+  font-weight: bold;
+}
