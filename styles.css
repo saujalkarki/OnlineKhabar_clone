@@ -9,6 +9,9 @@
   --color2: #84a4d5;
   --color3: #b50404;
   --color4: rgb(255, 255, 255);
+  --color5: rgba(34, 96, 191, 0.08);
+  --color6: rgba(105, 104, 104, 0.788);
+  --color7: #5b87a0ec;
 }
 
 .starter-logo-container {
@@ -21,6 +24,8 @@
 
 .nav-bar {
   background-color: var(--color1);
+  position: sticky;
+  top: 0;
 }
 
 .nav-bar-list {
@@ -70,7 +75,8 @@
 
 .container-1 {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 80% 20%;
+  padding: 1em 4em 1em 1em;
 }
 
 .hot-topics {
@@ -83,6 +89,7 @@
   display: flex;
   align-items: center;
   gap: 0.7em;
+  cursor: pointer;
 }
 
 .hot-topics-list img {
@@ -90,5 +97,73 @@
 }
 
 .hot-topics-list span {
-  font-weight: bold;
+  font-weight: 600;
+}
+
+.search-box {
+  background-color: var(--color5);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-field {
+  border: none;
+  outline: none;
+  padding: 0.4em 0em 0.4em 0.4em;
+  background-color: transparent;
+}
+
+.search-icon {
+  width: 15px;
+  align-items: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.footer-main1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 4em;
+}
+
+.main1-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+
+.main1-items h3 {
+  color: var(--color1);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.main1-items ul li {
+  list-style: none;
+  color: var(--color6);
+  cursor: pointer;
+  padding-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.main1-items ul li:hover {
+  color: var(--color1);
+}
+
+.footer-main2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 2em;
+  background-color: var(--color7);
+}
+
+.footer-logo {
+  width: 220px;
+}
+
+.main2-items {
+  padding: 0.8em;
+  border-right: 2px solid black;
 }
