@@ -11,7 +11,10 @@
   --color4: rgb(255, 255, 255);
   --color5: rgba(34, 96, 191, 0.08);
   --color6: rgba(105, 104, 104, 0.788);
-  --color7: #5b87a0ec;
+  --color7: #b0d2e2ec;
+  --color8: #dbe1e6;
+  --color9: #102c57;
+  --color10: rgb(82, 82, 82);
 }
 
 .starter-logo-container {
@@ -122,10 +125,65 @@
   cursor: pointer;
 }
 
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-2-heading {
+  font-size: 3.8rem;
+  color: var(--color9);
+  cursor: pointer;
+  padding: 0.6em 0 0 0;
+}
+
+.container-2-heading:hover {
+  color: var(--color1);
+}
+
+.container-2-div1 {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0 0 1.5em 0;
+}
+
+.container-2-div1 > img:not(:first-child) {
+  width: 15px;
+}
+
+.container-2-div1 span {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.container-2-ok-icon {
+  width: 45px;
+  padding: 0.4em;
+  border: 1px solid rgb(192, 188, 188);
+  border-radius: 100px;
+}
+
+.container-2-img1 {
+  border-radius: 8px;
+}
+
+.container-2-p1 {
+  padding: 1.5em;
+  color: var(--color10);
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 600;
+}
+
 .footer-main1 {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   padding: 4em;
+  background-color: var(--color8);
 }
 
 .main1-items {
@@ -155,15 +213,50 @@
 .footer-main2 {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
-  padding: 2em;
+  padding: 1.7em;
   background-color: var(--color7);
 }
 
 .footer-logo {
   width: 220px;
+  cursor: pointer;
 }
 
 .main2-items {
   padding: 0.8em;
-  border-right: 2px solid black;
+  border-right: 1px solid rgb(148, 148, 148);
+}
+
+.main2-items-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-main2-span1 {
+  font-size: 0.8rem;
+  color: var(--color6);
+}
+
+.footer-main2-span2 {
+  font-weight: 600;
+  color: var(--color6);
+}
+
+.main2-items-5 {
+  font-weight: 600;
+}
+
+.main2-items-6 {
+  border: none;
+}
+
+.main2-items-6 span {
+  color: #161616;
+}
+
+.main2-items-6 img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
 }
