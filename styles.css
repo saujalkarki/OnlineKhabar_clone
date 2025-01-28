@@ -29,6 +29,7 @@
   background-color: var(--color1);
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .nav-bar-list {
@@ -84,7 +85,6 @@
 
 .hot-topics {
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
 }
 
@@ -107,7 +107,6 @@
   background-color: var(--color5);
   border-radius: 50px;
   display: flex;
-  align-items: center;
   justify-content: space-around;
 }
 
@@ -120,7 +119,6 @@
 
 .search-icon {
   width: 15px;
-  align-items: center;
   vertical-align: middle;
   cursor: pointer;
 }
@@ -177,6 +175,31 @@
   font-size: 1.3rem;
   line-height: 1.8;
   font-weight: 600;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 50px;
+  padding: 0 130px;
+}
+
+.grid-item {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.grid-item h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .footer-main1 {
